@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.options.json",
+  "files": [],
+  "references": [
+    { "path": "apps/server" },
+    { "path": "libs/core" },
+    { "path": "libs/data" },
+    { "path": "libs/ui" },
+    { "path": "libs/widgets" },
+    { "path": "libs/tools" }
+  ]
+}
