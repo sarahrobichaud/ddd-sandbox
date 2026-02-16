@@ -1,0 +1,8 @@
+{
+  "name": "@cavok/config",
+  "exports": {
+    "./typescript-base": "./typescript/base.json",
+    "./typescript-web": "./typescript/web.json",
+    "./typescript-node": "./typescript/node.json"
+  }
+}
