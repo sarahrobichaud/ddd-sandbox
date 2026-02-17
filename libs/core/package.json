@@ -1,0 +1,91 @@
+{
+  "name": "@cavok/core",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "exports": {
+    "./auth": "./lib/src/identity/application/index.js",
+    "./auth/domain/*": "./lib/src/identity/domain/*.js",
+    "./presence": "./lib/src/presence/application/index.js",
+    "./presence/domain/*": "./lib/src/presence/domain/*.js",
+    "./app": "./lib/src/application/index.js",
+    "./domain/*": "./lib/src/domain/*.js",
+    "./contracts/*": "./lib/src/contracts/*.js",
+    "./values": "./lib/src/values/domain.js",
+    "./shared/*": "./lib/src/shared/*.js",
+    "./onboarding-flow": "./lib/src/flows/onboarding-flow/application/index.js",
+    "./onboarding-flow/domain/*": "./lib/src/flows/onboarding-flow/domain/*.js"
+  },
+  "imports": {
+    "#app/*": [
+      "./lib/src/application/*.js"
+    ],
+    "#domain/*": [
+      "./lib/src/domain/*.js"
+    ],
+    "#contracts/*": [
+      "./lib/src/contracts/*.js"
+    ],
+    "#shared/*": [
+      "./lib/src/shared/*.js"
+    ],
+    "#values": [
+      "./lib/src/values/domain.js"
+    ],
+    "#plane/app/*": [
+      "./lib/src/application/plane/*.js"
+    ],
+    "#plane/domain/*": [
+      "./lib/src/domain/plane/*.js"
+    ],
+    "#identity/app/*": [
+      "./lib/src/identity/application/*.js"
+    ],
+    "#identity/domain/*": [
+      "./lib/src/identity/domain/*.js"
+    ],
+    "#onboarding-flow/app/*": [
+      "./lib/src/flows/onboarding-flow/application/*.js"
+    ],
+    "#onboarding-flow/domain/*": [
+      "./lib/src/flows/onboarding-flow/domain/*.js"
+    ],
+    "#presence/app/*": [
+      "./lib/src/presence/application/*.js"
+    ],
+    "#presence/domain/*": [
+      "./lib/src/presence/domain/*.js"
+    ],
+    "#auth/app/*": [
+      "./lib/src/application/auth/*.js"
+    ],
+    "#auth/domain/*": [
+      "./lib/src/domain/auth/*.js"
+    ],
+    "#ledger/app/*": [
+      "./lib/src/application/ledger/*.js"
+    ],
+    "#ledger/domain/*": [
+      "./lib/src/domain/ledger/*.js"
+    ]
+  },
+  "keywords": [],
+  "scripts": {
+    "build": "tsc --project ./tsconfig.node.json && tsc --project ./tsconfig.browser.json",
+    "dev": "concurrently \"tsc --watch --project ./tsconfig.node.json\" \"tsc --watch --project ./tsconfig.browser.json\""
+  },
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.15.1",
+  "dependencies": {
+    "@cavok/config": "workspace:*",
+    "@cavok/data": "workspace:*",
+    "@standard-schema/spec": "^1.0.0",
+    "typescript": "^5.9.3",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "concurrently": "^9.2.1"
+  }
+}

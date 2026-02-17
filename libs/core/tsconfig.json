@@ -1,0 +1,34 @@
+{
+  "extends": "../../tsconfig.options.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./lib",
+    "paths": {
+      "#app/*": ["./src/application/*"],
+      "#domain/*": ["./src/domain/*"],
+      "#contracts/*": ["./src/contracts/*"],
+
+      "#plane/app/*": ["./src/application/plane/*"],
+      "#plane/domain/*": ["./src/domain/plane/*"],
+
+      "#auth/app/*": ["./src/application/auth/*"],
+      "#auth/domain/*": ["./src/domain/auth/*"],
+
+      "#presence/app/*": ["./src/application/presence/*"],
+      "#presence/domain/*": ["./src/domain/presence/*"],
+
+      "#identity/app/*": ["./src/identity/application/*"],
+      "#identity/domain/*": ["./src/identity/domain/*"],
+      "#ledger/app/*": ["./src/application/ledger/*"],
+      "#ledger/domain/*": ["./src/domain/ledger/*"],
+
+      "#onboarding-flow/app/*": ["./src/flows/onboarding-flow/application/*"],
+      "#onboarding-flow/domain/*": ["./src/flows/onboarding-flow/domain/*"],
+
+      "#values": ["src/values/domain.ts"],
+      "#shared/*": ["src/shared/*.ts"]
+    }
+  },
+  "include": ["src/**/*", "*.js", "*.ts", "../data/**/*"],
+  "references": [{ "path": "../data" }]
+}
