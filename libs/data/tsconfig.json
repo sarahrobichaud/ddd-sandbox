@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.options.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "outDir": "./lib",
+    "paths": {
+      "#schema/*": ["./src/schema/*"],
+      "#client": ["./src/client.js"],
+      "#schemas": ["./src/schemas.js"]
+    }
+  },
+  "include": ["src/**/*", "*.js", "*.ts"]
+}

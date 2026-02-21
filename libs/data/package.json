@@ -1,0 +1,46 @@
+{
+  "name": "@cavok/data",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "type": "module",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": "./lib/src/index.js",
+    "./values": "./lib/src/schema/values.js",
+    "./client": "./lib/src/client.js"
+  },
+  "imports": {
+    "#schema/*": [
+      "./lib/src/schema/*.js"
+    ],
+    "#client": [
+      "./lib/src/client.js"
+    ],
+    "#schemas": [
+      "./lib/src/schemas.js"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.15.1",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "db:check": "drizzle-kit check",
+    "db:generate": "pnpm dlx tsx node_modules/drizzle-kit/bin.cjs generate",
+    "db:migrate": "pnpm dlx tsx node_modules/drizzle-kit/bin.cjs migrate"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@cavok/config": "workspace:*",
+    "dotenv": "^17.2.3",
+    "drizzle-kit": "^0.31.7",
+    "drizzle-orm": "^0.44.7",
+    "postgres": "^3.4.7"
+  }
+}
