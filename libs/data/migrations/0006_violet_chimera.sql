@@ -1,0 +1,1 @@
+ALTER TABLE "core"."profiles" ALTER COLUMN "pronouns" SET DEFAULT '';
