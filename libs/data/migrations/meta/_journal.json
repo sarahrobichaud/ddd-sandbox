@@ -1,0 +1,62 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1767306623637,
+      "tag": "0000_careful_lionheart",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1767549557122,
+      "tag": "0001_boring_warlock",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1767997742556,
+      "tag": "0002_lethal_mariko_yashida",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1767999134200,
+      "tag": "0003_same_changeling",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1768001326226,
+      "tag": "0004_minor_maginty",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1768015422080,
+      "tag": "0005_purple_norman_osborn",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1768063004351,
+      "tag": "0006_violet_chimera",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1768064855783,
+      "tag": "0007_icy_sunfire",
+      "breakpoints": true
+    }
+  ]
+}
