@@ -1,0 +1,98 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "imports": {
+    "#errors/*": [
+      "./build/src/errors/*.js"
+    ],
+    "#modules/*": [
+      "./build/src/modules/*.js"
+    ],
+    "#types/*": [
+      "./build/src/types/*.js"
+    ],
+    "#shared/*": [
+      "./build/src/shared/*.js"
+    ],
+    "#start/*": [
+      "./build/src/start/*.js"
+    ],
+    "#db": [
+      "./build/src/shared/infrastructure/db/index.js"
+    ],
+    "#planes/*": [
+      "./build/src/modules/planes/*.js"
+    ],
+    "#auth/*": [
+      "./build/src/modules/auth/*.js"
+    ],
+    "#ledger/*": [
+      "./build/src/modules/ledger/*.js"
+    ],
+    "#root/*": [
+      "./build/src/*.js"
+    ]
+  },
+  "scripts": {
+    "dev": "node --watch build/src/init.js",
+    "dev:build": "tsc --build --watch",
+    "build": "tsc --build",
+    "start": "node build/src/init.js",
+    "clean": "tsc --build --clean",
+    "format": "prettier --write .",
+    "db:generate": "tsx node_modules/drizzle-kit/bin.cjs generate",
+    "db:migrate": "supabase migration up",
+    "db:seed": "tsx database/seed/drizzle.ts",
+    "db:studio": "tsx node_modules/drizzle-kit/bin.cjs studio",
+    "db:drop": "tsx node_modules/drizzle-kit/bin.cjs drop"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "@koa/router": "^14.0.0",
+    "@cavok/config": "workspace:*",
+    "@cavok/core": "workspace:*",
+    "@cavok/data": "workspace:*",
+    "argon2": "^0.44.0",
+    "async": "^3.2.6",
+    "bullmq": "^5.66.4",
+    "dotenv": "^16.6.1",
+    "drizzle-orm": "^0.44.7",
+    "ioredis": "^5.9.1",
+    "jsonwebtoken": "^9.0.2",
+    "koa": "^3.1.1",
+    "koa-bodyparser": "^4.4.1",
+    "nodemailer": "^6.10.1",
+    "pg": "^8.16.3",
+    "postgres": "^3.4.7",
+    "resend": "^4.8.0",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "@types/async": "^3.2.25",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/koa": "^3.0.1",
+    "@types/koa-bodyparser": "^4.3.13",
+    "@types/koa__cors": "^5.0.1",
+    "@types/koa__router": "^12.0.5",
+    "@types/node": "^22.19.1",
+    "@types/nodemailer": "^6.4.21",
+    "@types/pg": "^8.15.6",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.1",
+    "prettier": "^3.6.2",
+    "supertest": "^7.1.4",
+    "ts-node-maintained": "^10.9.6",
+    "tsc-alias": "^1.8.16",
+    "tsup": "^8.5.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "uuid": "^11.1.0"
+  }
+}

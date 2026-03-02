@@ -1,0 +1,26 @@
+{
+  "extends": "../../tsconfig.options.json",
+  "compilerOptions": {
+    "outDir": "build",
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "#errors/*": ["./src/errors/*.ts"],
+      "#modules/*": ["./src/modules/*.ts"],
+      "#types/*": ["./src/types/*.ts"],
+      "#shared/*": ["./src/shared/*.ts"],
+      "#start/*": ["./src/start/*.ts"],
+      "#root/*": ["./src/*.ts"],
+      "#db": ["./src/shared/infrastructure/db/index.js"],
+      "#auth/*": ["./src/modules/auth/*.ts"]
+    }
+  },
+  "include": ["./src/**/*", "../../libs/core/**/*", "../../libs/data/**/*"],
+  "exclude": ["build", "node_modules"],
+  "references": [{ "path": "../../libs/core" }, { "path": "../../libs/data" }],
+  "tsc-alias": {
+    "verbose": false,
+    "resolveFullExtensions": [".js", ".jsx", ".ts", ".tsx"],
+    "resolveFullPaths": true
+  }
+}
