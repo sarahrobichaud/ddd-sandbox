@@ -1,0 +1,11 @@
+{
+  "extends": "@cavok/config/typescript-web",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@cavok/ui/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "dist"]
+}

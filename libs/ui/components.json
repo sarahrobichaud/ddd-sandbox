@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/globals.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "aliases": {
+    "components": "@cavok/ui/components",
+    "utils": "@cavok/ui/lib/utils",
+    "ui": "@cavok/ui/components/shad",
+    "lib": "@cavok/ui/lib",
+    "hooks": "@cavok/ui/hooks"
+  },
+  "iconLibrary": "lucide"
+}
