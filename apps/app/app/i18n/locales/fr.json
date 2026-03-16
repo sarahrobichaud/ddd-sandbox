@@ -1,0 +1,151 @@
+{
+  "appName": "HorizonFS",
+  "common": {
+    "ok": "Ok",
+    "reset": "Réinitialiser",
+    "save": "Enregistrer",
+    "submit": "Soumettre",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "create": "Créer"
+  },
+  "currency": {
+    "PREMIUM_CREDITS": "Pièces Horizon",
+    "CASH": "Argent"
+  },
+  "action": {
+    "manageEntity": "Gérer {{entity}}",
+    "createEntity": "Créer {{entity}}",
+    "editEntity": "Modifier {{entity}}"
+  },
+  "entity": {
+    "plane": {
+      "name_one": "Avion",
+      "name_other": "Avions",
+      "prop": {
+        "name": "Nom",
+        "registration": "Immatriculation",
+        "category": "Catégorie",
+        "categories": {
+          "dual_prop": "Bi-hélice",
+          "jet": "Jet",
+          "propeller": "Hélice"
+        }
+      }
+    },
+    "fleet": {
+      "name_one": "Flotte",
+      "name_other": "Flottes"
+    }
+  },
+  "auth": {
+    "signedInAs": "Connecté en tant que",
+    "signout": "Déconnexion"
+  },
+  "components": {
+    "dataTable": {
+      "xResults_one": "{{count}} Résultat",
+      "xResults_other": "{{count}} Résultats",
+      "search": {
+        "searchByProp": "Rechercher par {{prop}}",
+        "prop": {
+          "name": "nom"
+        }
+      },
+      "selection": {
+        "xOfXSelected_other": "{{selected}} sur {{total}} lignes sélectionnées",
+        "xOfXSelected_one": "{{selected}} sur {{total}} ligne sélectionnée"
+      },
+      "pagination": {
+        "rowsPerPage": "Lignes par page",
+        "pageXofX": "Page {{current}} sur {{total}}"
+      }
+    }
+  },
+  "modules": {
+    "navigation": {
+      "home": "Tableau de bord",
+      "admin": "Admin",
+      "profile": "Profil",
+      "world": "Monde",
+      "career": "Carrière"
+    },
+    "admin": {
+      "adminPanel": "Panneau d'administration",
+      "dataBrowser": {
+        "entityBrowser": {
+          "dataBrowser": "Explorateur de données",
+          "coreEntities": "Entités principales",
+          "backToEntities": "Retour aux entités"
+        },
+        "createEntity": "Créer {{entity}}",
+        "backToEntityList": "Retour à la liste de {{entity}}"
+      }
+    },
+    "onboarding": {
+      "stepper": {
+        "next": "Continuer",
+        "back": "Retour",
+        "finish": "Terminer la configuration",
+        "stepProgress": "Étape {{current}} sur {{total}}"
+      },
+      "welcome": {
+        "title": "Bienvenue sur Synced Focus",
+        "description": "Commençons votre carrière de simulation de vol. Cette configuration rapide ne prendra que quelques minutes.",
+        "step1Title": "Créez votre profil",
+        "step1Description": "Parlez-nous de vous et choisissez votre nom d'affichage",
+        "step2Title": "Définissez vos préférences",
+        "step2Description": "Personnalisez votre expérience avec vos paramètres préférés",
+        "step3Title": "Commencez à voler",
+        "step3Description": "Vous êtes prêt à commencer votre carrière d'aviation virtuelle"
+      },
+      "profile": {
+        "title": "Créez votre profil",
+        "description": "Ces informations seront visibles par les autres pilotes de la communauté.",
+        "displayName": "Nom d'affichage",
+        "displayNamePlaceholder": "pilote_as_123",
+        "displayNameHelp": "Votre nom d'utilisateur unique visible par les autres utilisateurs",
+        "firstName": "Prénom",
+        "firstNamePlaceholder": "Jean",
+        "lastName": "Nom",
+        "lastNamePlaceholder": "Dupont",
+        "email": "Email",
+        "emailPlaceholder": "pilote@exemple.com",
+        "emailHelp": "Nous ne partagerons jamais votre email avec qui que ce soit",
+        "errors": {
+          "displayNameMin": "Le nom d'affichage doit contenir au moins 3 caractères",
+          "displayNameMax": "Le nom d'affichage doit contenir moins de 30 caractères",
+          "displayNameFormat": "Le nom d'affichage ne peut contenir que des lettres, chiffres, tirets et underscores",
+          "firstNameRequired": "Le prénom est requis",
+          "lastNameRequired": "Le nom est requis",
+          "emailInvalid": "Veuillez entrer une adresse email valide"
+        }
+      },
+      "preferences": {
+        "title": "Définissez vos préférences",
+        "description": "Personnalisez votre expérience selon vos préférences.",
+        "timezone": "Fuseau horaire",
+        "timezoneHelp": "Utilisé pour la planification des vols et les notifications d'événements",
+        "timezonePlaceholder": "Sélectionnez votre fuseau horaire",
+        "notificationsTitle": "Préférences de notification",
+        "emailNotifications": "Notifications par email",
+        "emailNotificationsHelp": "Recevoir des mises à jour par email concernant votre compte et vos vols",
+        "flightAlerts": "Alertes de vol",
+        "flightAlertsHelp": "Être notifié des changements de statut et des mises à jour de vols",
+        "marketingEmails": "Emails marketing",
+        "marketingEmailsHelp": "Recevoir des mises à jour sur les nouvelles fonctionnalités et événements",
+        "errors": {
+          "timezoneRequired": "Veuillez sélectionner un fuseau horaire"
+        }
+      },
+      "complete": {
+        "title": "Vous êtes prêt !",
+        "description": "Votre profil a été créé avec succès. Vous pouvez maintenant commencer votre voyage de simulation de vol.",
+        "nextStepsTitle": "Prochaines étapes",
+        "nextStep1": "Explorer les vols et avions disponibles",
+        "nextStep2": "Rejoindre ou créer une compagnie aérienne virtuelle",
+        "nextStep3": "Commencer à suivre votre premier vol"
+      }
+    }
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "app": {
+    "name": {
+    "networkFull": "App Name Flight Simulation Network",
+    "short": "App Name",
+    "full": "App Name FS"
+    }
+  },
+  "common": {
+    "ok": "Ok",
+    "reset": "Reset",
+    "save": "Save",
+    "submit": "submit",
+    "edit": "Edit",
+    "delete": "Delete",
+    "create": "Create"
+  },
+  "currency": {
+    "PREMIUM_CREDITS": "Horizon Credits",
+    "CASH": "Cash",
+    "BANK": "Bank"
+  },
+  "action": {
+    "manageEntity": "Manage {{entity}}",
+    "createEntity": "Create {{entity}}",
+    "editEntity": "Edit {{entity}}"
+  },
+  "entity": {
+    "plane": {
+      "name_one": "Plane",
+      "name_other": "Planes",
+      "prop": {
+        "name": "Name",
+        "registration": "Registration",
+        "category": "Category",
+        "categories": {
+          "dual_prop": "Dual Propeller",
+          "jet": "Jet",
+          "propeller": "Propeller"
+        }
+      }
+    },
+    "fleet": {
+      "name_one": "Fleet",
+      "name_other": "Fleets"
+    }
+  },
+  "auth": {
+    "signedInAs": "Signed in as",
+    "signout": "Sign out"
+  },
+  "form": {
+    "components": {
+      "label": {
+        "optional": "Optional"
+      }
+    },
+    "fields": {
+      "displayName": {
+        "useTitle": "Use \"{{username}}\""
+      }
+    }
+  },
+  "components": {
+    "languageSwitcher": {
+      "locale": {
+        "fr": "Francais",
+        "en": "English"
+      }
+    },
+    "dataTable": {
+      "xResults_one": "{{count}} Result",
+      "xResults_other": "{{count}} Results",
+      "search": {
+        "searchByProp": "Search by {{prop}}",
+        "prop": {
+          "name": "name"
+        }
+      },
+      "selection": {
+        "xOfXSelected_other": "{{selected}} of {{total}} rows selected",
+        "xOfXSelected_one": "{{selected}} of {{total}} row selected"
+      },
+      "pagination": {
+        "rowsPerPage": "Rows per page",
+        "pageXofX": "Page {{current}} of {{total}}"
+      }
+    }
+  },
+  "modules": {
+    "navigation": {
+      "home": "Dashboard",
+      "admin": "Admin",
+      "profile": "Profile",
+      "world": "World",
+      "career": "Career"
+    },
+    "admin": {
+      "adminPanel": "Admin Panel",
+      "dataBrowser": {
+        "entityBrowser": {
+          "dataBrowser": "Data Browser",
+          "coreEntities": "Core Entities",
+          "backToEntities": "Back to entities"
+        },
+        "createEntity": "Create {{entity}}",
+        "backToEntityList": "Back to {{entity}} list"
+      }
+    },
+    "onboarding": {
+      "components": {
+        "stepper": {
+          "continue": "Continue",
+          "back": "Back",
+          "finish": "Finish"
+        }
+      },
+      "welcomeStep": {
+        "preview": {
+          "title": "Welcome",
+          "description": "Get Started"
+        },
+        "content": {
+          "title": "Welcome to the {{appName}}",
+          "description": "Let's get you set up with your flight simulation career. This quick setup will take just a few minutes.",
+          "step1": {
+            "title": "Create your profile",
+            "description": "Tell us about yourself and choose your display name"
+          },
+          "step2": {
+            "title": "Verify your account",
+            "description": "We'll send you a code via email"
+          }
+        }
+      },
+      "presenceStep": {
+        "preview": {
+          "title": "Presence",
+          "description": "How you'll be seen by others"
+        },
+        "content": {
+          "title": "Create Your Profile",
+          "description":"Tell us about yourself. This is how other pilots will see you.", 
+          "form": {
+            "section": {
+              "personalIdentity": {
+                "title": "Personal Identity",
+                "description": "How you'll appear to others"
+              },
+              "generalInfo" :{
+                "title": "General Information",
+                "description": "Your background with aviation"
+              }
+            },
+            "fields": {
+              "displayName": {
+                "label": "Display Name",
+                "placeholder": "Captain Sky Walker",
+                "hint": "Must be between 3 and 30 characters"
+              },
+              "firstName": {
+                "placeholder": "Jane",
+                "label": "First Name"
+              },
+              "lastName": {
+                "placeholder": "Smith",
+                "label": "Last Name"
+              },
+              "pronouns": {
+                "placeholder": "he/him",
+                "label": "Pronouns"
+              },
+              "experienceLevel": {
+                "label":"Experience Level",
+                "BEGINNER": {
+                  "label": "Beginner",
+                  "hint": "I'm just starting out"
+                },
+                "INTERMEDIATE": {
+                  "label": "Intermediate",
+                  "hint": "I have some experience"
+                },
+                "ADVANCED": {
+                  "label": "Advanced",
+                  "hint": "I like a realistic experience"
+                },
+                "EXPERT": {
+                  "label": "Expert",
+                  "hint": "I have a pilot's licence"
+                }
+              },
+              "homeAirport": {
+                "placeholder": "CYHZ",
+                "label": "Home Airport",
+                "hint": "4-letter ICAO code"
+              }
+            }
+          }
+        }
+      },
+      "completeStep": {
+        "preview": {
+          "title": "Complete",
+          "description": "All done!"
+        },
+        "content": {
+          "title": "V1, Rotate!",
+          "description": "We have everything needed to setup your account, click finish if everything looks good."
+        }
+      },
+      "stepper": {
+        "next": "Continue",
+        "back": "Back",
+        "finish": "Complete Setup",
+        "stepProgress": "Step {{current}} of {{total}}"
+      },
+      "welcome": {
+        "title": "Welcome to Synced Focus",
+        "description": "Let's get you set up with your flight simulation career. This quick setup will take just a few minutes.",
+        "step1Title": "Create your profile",
+        "step1Description": "Tell us about yourself and choose your display name",
+        "step2Title": "Set your preferences",
+        "step2Description": "Customize your experience with your preferred settings",
+        "step3Title": "Start flying",
+        "step3Description": "You're all set to begin your virtual aviation career"
+      },
+      "profile": {
+        "title": "Create Your Profile",
+        "description": "This information will be visible to other pilots in the community.",
+        "displayName": "Display Name",
+        "displayNamePlaceholder": "pilot_ace_123",
+        "displayNameHelp": "Your unique username visible to other users",
+        "firstName": "First Name",
+        "firstNamePlaceholder": "John",
+        "lastName": "Last Name",
+        "lastNamePlaceholder": "Doe",
+        "email": "Email",
+        "emailPlaceholder": "pilot@example.com",
+        "emailHelp": "We'll never share your email with anyone else",
+        "errors": {
+          "displayNameMin": "Display name must be at least 3 characters",
+          "displayNameMax": "Display name must be less than 30 characters",
+          "displayNameFormat": "Display name can only contain letters, numbers, hyphens, and underscores",
+          "firstNameRequired": "First name is required",
+          "lastNameRequired": "Last name is required",
+          "emailInvalid": "Please enter a valid email address"
+        }
+      },
+      "preferences": {
+        "title": "Set Your Preferences",
+        "description": "Customize your experience to match your preferences.",
+        "timezone": "Timezone",
+        "timezoneHelp": "Used for flight scheduling and event notifications",
+        "timezonePlaceholder": "Select your timezone",
+        "notificationsTitle": "Notification Preferences",
+        "emailNotifications": "Email Notifications",
+        "emailNotificationsHelp": "Receive email updates about your account and flights",
+        "flightAlerts": "Flight Alerts",
+        "flightAlertsHelp": "Get notified about flight status changes and updates",
+        "marketingEmails": "Marketing Emails",
+        "marketingEmailsHelp": "Receive updates about new features and events",
+        "errors": {
+          "timezoneRequired": "Please select a timezone"
+        }
+      },
+      "complete": {
+        "title": "You're All Set!",
+        "description": "Your profile has been created successfully. You can now start your flight simulation journey.",
+        "nextStepsTitle": "What's Next?",
+        "nextStep1": "Explore available flights and aircraft",
+        "nextStep2": "Join or create a virtual airline",
+        "nextStep3": "Start tracking your first flight"
+      }
+    }
+  }
+}
