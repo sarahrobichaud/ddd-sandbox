@@ -1,0 +1,24 @@
+{
+  "name": "@cavok/tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "hfs-tools": "dist/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.15.1",
+  "dependencies": {
+    "@types/node": "^24.10.1",
+    "fast-glob": "^3.3.3",
+    "kleur": "^4.1.5",
+    "minimist": "^1.2.8",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
